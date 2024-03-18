@@ -1,0 +1,617 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(90deg, #cdffd8, #94b9ff);
+    font-family: 'Glacial Indifference', sans-serif;
+}
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* nav bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 70px;
+    padding: 25px;
+    
+}
+
+.small-logo {
+    width: auto;
+    height: 100px;
+}
+
+.small-logo:hover {
+    cursor: pointer;
+    animation: bouncingAnimation 1s infinite;
+}
+
+@keyframes bouncingAnimation {
+   0%, 100% {
+    transform: rotate(0deg);
+   } 
+   50% {
+    transform: rotate(-5deg);
+   }
+}
+
+
+.navigation-choice {
+    display: flex;
+    gap: 30px;
+    font-size: 1.8rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Glacial Indifference', sans-serif;                                          
+}
+
+.navigation-choice :hover {
+    cursor: pointer;
+    color: rgb(70, 69, 69);
+}
+
+
+
+
+/* page 1 */
+.page-1 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page-1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 128px;
+}
+
+.main-box-logo {
+    width: 300px;
+    height: 300px;
+    animation: waveAnimation 5s infinite; 
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+      transform: rotate(-5deg) translateY(0px);
+    }
+    25% {
+      transform: rotate(5deg) translateY(-20px);
+    }
+    50% {
+      transform: rotate(-5deg) translateY(0px);
+    }
+    75% {
+      transform: rotate(5deg) translateY(20px);
+    }
+  }
+
+.main-box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-box-text-title {
+    font-size: 4rem;
+    font-family: 'Mochiy Pop One';
+}
+
+.main-box-text-description {
+    font-size: 2rem;
+    font-family: 'Glacial Indifference', sans-serif;
+    text-align: center;
+}
+
+.main-box-button {
+    padding: 22px 36px;
+    border: 0px;
+    border-radius: 48px;
+    background-color: #ee4348;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.main-box-button:hover {
+    background-color: #d42127;
+    cursor: pointer;
+}
+
+
+
+/* page 2 */
+.page-2{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 120px;
+}
+
+.title-page-2{
+    font-size: 4rem;
+    font-family: 'Mochiy Pop One';
+    text-align: center;
+    padding-top: 100px;
+}
+
+.boxes-page-2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    padding: 100px;
+}
+
+.vi-box-page-2{
+    align-items: center;
+    position: relative;
+    width: 350px; 
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    margin-top: -50px;
+  
+}
+
+.vi{
+    position: absolute;
+    font-size: 2.9rem;
+    font-family: 'Mochiy Pop One';
+    text-align: left;
+    transform: translate(20%, 460%)
+}
+
+.ig_logo{
+    position: absolute;
+    width: 50px;
+    height: 50px; 
+    transform: translate(430%, 640%);
+    cursor: pointer;
+}
+
+.in_logo{
+    position: absolute;
+    width: 50px;
+    height: 50px; 
+    transform: translate(530%, 640%);
+    cursor: pointer;
+}
+
+.photo{
+    position: absolute;
+    width: 270px;
+    height: 250px; 
+    border-radius: 20px;
+    transform: translate(16%, 17%)
+}
+
+.faith-box-page-2{
+    align-items: center;
+    position: relative;
+    width: 350px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    margin-bottom: -400px;
+}
+
+.faith{
+    position: absolute;
+    font-size: 2.8rem;
+    font-family: 'Mochiy Pop One';
+    text-align: left;
+    transform: translate(30%, 480%)
+}
+
+.introduction{
+    width: 400px;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-family: 'Glacial Indifference', sans-serif;                                   
+    text-align: justify;
+}
+
+.icon_page2{
+    position: absolute;
+    width: 80px;
+    height: auto;
+    transform: translate(340%, -10%);
+    animation: bouncingAnimation 1s infinite;
+}
+
+
+
+
+
+/* page 3 */
+
+.page-3 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 150px;
+}
+
+.big-title-page-3{
+    font-size: 5rem;
+    font-family: 'Mochiy Pop One';
+    text-align: center;
+    padding: 30px;
+}
+
+.small-title-page-3{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.boxes-page-3{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.box-page-3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 550px;
+    height: 340px;
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    gap: 20px;
+}
+
+.logo-page-3{
+    height: 150px;
+    width: auto;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(-45%, 10%);
+}
+
+.box-title-page-3{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.choices-page-3{
+    font-size: 5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.button-page-3{
+    padding: 22px 50px;
+    border: 0px;
+    border-radius: 48px;
+    background-color: #ee4348;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.button-page-3:hover{
+    background-color: #d42127;
+    cursor: pointer;
+}
+
+/* page 4 */
+
+.page-4{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 120px;
+}
+
+.big-title-page-4{
+    font-size: 5rem;
+    font-family: 'Mochiy Pop One';
+    text-align: center;
+    padding-top: 50px;
+}
+
+.small-title-page-4{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.boxes-page-4{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.box-page-4{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 550px;
+    height: 600px;
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    gap: 10px;
+    padding: 24px;
+}
+
+
+.game{
+    font-size: 1.5rem;
+    text-align: left;
+    width: 85%; 
+    display: block;
+}
+
+.button-game-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+.button-game{
+    padding: 12px 0px;
+    border: 0px;
+    border-radius: 48px;
+    background-color: #ee4348;
+    color: white;
+    font-size: 1.5rem;
+    width: 85%;
+    
+}
+
+.button-game:hover{
+    background-color: #d42127;
+    cursor: pointer;
+}
+
+
+
+/* page 5 */
+
+.page-5 {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 180px;
+}
+
+.title-page-5 { 
+    font-size: 3rem;
+    font-family: 'Mochiy Pop One';
+    text-align: center;
+    padding-top: 100px;
+}
+
+.boxes-page-5 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.box-page-5 {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 50%; 
+    background-color: #FFFFFF;
+    border-radius: 48px;
+    padding: 24px;
+    gap: 20px; 
+}
+
+.box-text-page-5 {
+    font-size: 3rem;
+    font-weight: bold; 
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 40px; 
+}
+
+.button-game-link-5 {
+    text-decoration: none;
+    display: flex; 
+    justify-content: center; 
+}
+
+.button-game-5 {
+    padding: 12px 0px;
+    border: 0px;
+    border-radius: 48px;
+    background-color: #ee4348;
+    color: white;
+    font-size: 1.5rem;
+    width: 200px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.button-game-5:hover{
+    background-color: #d42127;
+    cursor: pointer;
+}
+
+.logo-page-5 {
+    width: 170px;
+    height: auto;
+    position: absolute;
+    bottom: -50px;
+    left: 30px;
+}
+
+
+
+/* page 6 */
+.page-6{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    padding-bottom: 80px; 
+}
+
+.title-page-6 { 
+    font-size: 3rem;
+    font-family: 'Mochiy Pop One';
+    text-align: center;
+    padding-top: 100px;
+}
+
+.description-page-6{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Glacial Indifference', sans-serif;
+    margin-top: 10px;
+}
+
+.main-box-page-6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.small-box-page-6{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AstroCode{
+    text-align: center;
+    font-family: 'Glacial Indifference', sans-serif;
+    font-size: 30px;
+}
+
+.small-logo-page-6{
+    width: 80px;
+    height: auto;
+}
+
+.logo-page-6{
+    width: 300px;
+    height: auto;
+}
+  
+
+
+@media (max-width: 1000px) {
+    .main-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-box-logo {
+        width: auto;
+        max-width: 50%;
+        height: auto;
+    }
+    .boxes-page-2{
+        flex-direction: column;
+        align-items: center; 
+        gap: 100px;
+    }
+
+    .introduction{
+        width: 600px;
+        font-size: 1.2rem;
+        line-height: 35px;
+        font-family: 'Glacial Indifference', sans-serif;                                   
+        text-align: center;
+        margin-top: 400px;
+    }
+   
+    .boxes-page-3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxes-page-4{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-text-page-5 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-left: -10px;
+    }
+    
+    .button-game-5 {
+        padding: 12px 0px;
+        border: 0px;
+        border-radius: 48px;
+        background-color: #ee4348;
+        color: white;
+        font-size: 1rem;
+        width: 70px; 
+        height: 60px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .logo-page-5 {
+        width: 120px;
+        height: auto;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .page-6{
+        flex-direction: column;
+    }
+
+    .main-box-page-6{
+        flex-direction: column;
+    }
+}
+
+
